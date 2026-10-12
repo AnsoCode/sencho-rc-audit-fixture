@@ -1,5 +1,6 @@
 services:
   web:
-    image: nginx:1.27-alpine
+    image: busybox:1.35.0
+    command: ["sleep","3600"]
     ports:
       - "18112:80"
